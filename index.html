@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
@@ -18,17 +19,21 @@
 	<header>
 		<nav>
 			<img src="./images/logo.svg" alt="logo">
-			<ul>
-				<li>About</li>
-				<li>Services</li>
-				<li>Projets</li>
-				<li>Contact</li>
-			</ul>
-			<img src="./images/icon-hamburger.svg" alt="hamburger menu">
+			<div class="wrapper">
+				<ul class="speech-bubble">
+					<li>About</li>
+					<li>Services</li>
+					<li>Projects</li>
+					<li><button>CONTACT</button></li>
+				</ul>
+			</div>
+			<img class="hamburger-menu" src="./images/icon-hamburger.svg" alt="hamburger menu">
 		</nav>
 
-		<h1>We are creatives</h1>
-		<img src="./images/icon-arrow-down.svg" alt="arrow down">
+		<div class="text-content">
+			<h1>WE ARE CREATIVES</h1>
+			<img class="arrow-down" src="./images/icon-arrow-down.svg" alt="arrow down">
+		</div>
 	</header>
 	<main>
 		<div class="panel">
@@ -141,6 +146,8 @@
 		  Coded by <a href="#">Your Name Here</a>.
 		</div>
 	</footer>
+
+	<script src="./main.js"></script>ri
 
 </body>
 </html>

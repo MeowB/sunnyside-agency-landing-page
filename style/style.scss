@@ -1,0 +1,131 @@
+// Barlow
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// Frauces
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+// Primary Colors
+$c-Soft-red: hsl(7, 99%, 70%);
+$c-Yellow: hsl(51, 100%, 49%);
+$c-Dark-desaturated-cyan: hsl(167, 40%, 24%);// graphic design text
+$c-Dark-blue: hsl(198, 62%, 26%); // photography text 
+$c-Dark-moderate-cyan: hsl(168, 34%, 41%); // footer
+
+// Neutral Colors
+$c-Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$c-Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$c-Dark-grayish-blue: hsl(232, 10%, 55%);
+$c-Grayish-blue: hsl(210, 4%, 67%);
+$c-White: hsl(0, 0%, 100%);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-image: url(../images/mobile/image-header.jpg);
+	background-position: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	height: 540px;
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		img {
+			padding: 32px 24px 0 24px
+		}
+
+
+		.wrapper {
+			position: absolute;
+			width: 100%;
+			display: none;
+			justify-content: center;
+
+
+			ul {
+				background-color: $c-White;
+				width: calc(100% - 48px);
+				margin-top: 110px;
+				text-align: center;
+				list-style: none;
+				flex-direction: column;
+				position: absolute;
+
+				li {
+					font-size: 20px;
+					font-family: Barlow;
+					margin-top: 40px;
+					color: $c-Dark-grayish-blue;
+					font-weight: 500;
+				}
+
+				button {
+					margin-bottom: 40px;
+					padding: 16px 30px;
+					border-radius: 28px;
+					background-color: $c-Yellow;
+					border: none;
+					font-weight: bold;
+					font-family: Fraunces;
+				}
+			}
+	
+			.speech-bubble:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 0;
+				height: 0;
+				border: 28px solid transparent;
+				border-bottom-color: $c-White;
+				border-top: 0;
+				border-right: 0;
+				margin-left: -17px;
+				margin-top: -28px;
+			}
+		}
+
+	}
+
+	.hamburger-menu {
+		cursor: pointer;
+	}
+
+
+	.text-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 100%;
+
+		h1 {
+			margin: auto;
+			margin-bottom: 20px;
+			color: $c-White;
+			font-family: Fraunces;
+			font-size: 40px;
+			font-weight: bold;
+			letter-spacing: 6.25px;
+			text-align: center;
+		}
+
+		.arrow-down {
+			margin: auto;
+			margin-top: 0;
+			width: 30px;
+		}
+	}
+}
+
+main {
+	.panel {
+		img {
+			width: 100%;
+		}
+	}
+}
