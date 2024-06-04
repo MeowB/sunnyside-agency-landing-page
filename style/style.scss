@@ -1,8 +1,7 @@
 // Barlow
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-// Frauces
+// Fraunces
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
-
 // Primary Colors
 $c-Soft-red: hsl(7, 99%, 70%);
 $c-Yellow: hsl(51, 100%, 49%);
@@ -109,7 +108,7 @@ header {
 			color: $c-White;
 			font-family: Fraunces;
 			font-size: 40px;
-			font-weight: bold;
+			font-weight: 800;
 			letter-spacing: 6.25px;
 			text-align: center;
 		}
@@ -126,6 +125,60 @@ main {
 	.panel {
 		img {
 			width: 100%;
+		}
+
+		.text {
+			font-family: "Fraunces";
+			margin-top: 64px;
+			text-align: center;
+			padding: 0 20px;
+
+			h2 {
+				font-weight: 900;
+				font-size: 32px;
+				color: $c-Very-dark-desaturated-blue;
+			}
+		
+			p {
+				color: $c-Dark-grayish-blue;
+				font-family: "Barlow";
+				margin-top: 30px;
+				line-height: 30px;
+				font-weight: 600;
+			}
+
+			.learn-more-btn {
+				margin-top: 32px;
+				margin-bottom: 64px;
+
+				a {
+					position: relative;
+					font-family: "Fraunces";
+					color: black;
+					text-decoration: none;
+					font-weight: 900;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+
+					.line-through-yellow {
+						position: absolute;
+						bottom: -2px;
+						left: -7px;
+						border-radius: 4px;
+						width: 110%;
+						border-bottom: 8px solid rgba($c-Yellow, .3);
+					}
+					.line-through-pink {
+						position: absolute;
+						bottom: -2px;
+						left: -7px;
+						border-radius: 4px;
+						width: 110%;
+						border-bottom: 8px solid rgba(#FE7766, .3);
+					}
+				}
+			}
+
 		}
 	}
 }

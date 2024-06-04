@@ -81,7 +81,7 @@ header .text-content h1 {
   color: white;
   font-family: Fraunces;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 800;
   letter-spacing: 6.25px;
   text-align: center;
 }
@@ -93,6 +93,53 @@ header .text-content .arrow-down {
 
 main .panel img {
   width: 100%;
+}
+main .panel .text {
+  font-family: "Fraunces";
+  margin-top: 64px;
+  text-align: center;
+  padding: 0 20px;
+}
+main .panel .text h2 {
+  font-weight: 900;
+  font-size: 32px;
+  color: #23303e;
+}
+main .panel .text p {
+  color: #818498;
+  font-family: "Barlow";
+  margin-top: 30px;
+  line-height: 30px;
+  font-weight: 600;
+}
+main .panel .text .learn-more-btn {
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+main .panel .text .learn-more-btn a {
+  position: relative;
+  font-family: "Fraunces";
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+main .panel .text .learn-more-btn a .line-through-yellow {
+  position: absolute;
+  bottom: -2px;
+  left: -7px;
+  border-radius: 4px;
+  width: 110%;
+  border-bottom: 8px solid rgba(250, 212, 0, 0.3);
+}
+main .panel .text .learn-more-btn a .line-through-pink {
+  position: absolute;
+  bottom: -2px;
+  left: -7px;
+  border-radius: 4px;
+  width: 110%;
+  border-bottom: 8px solid rgba(254, 119, 102, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */
