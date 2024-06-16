@@ -44,13 +44,17 @@ header nav .wrapper ul li {
   font-weight: 500;
 }
 header nav .wrapper ul button {
-  margin-bottom: 40px;
-  padding: 16px 30px;
+  color: #808397;
+  background-color: transparent;
   border-radius: 28px;
-  background-color: #fad400;
   border: none;
   font-weight: bold;
-  font-family: Fraunces;
+}
+header nav .wrapper ul .last-button {
+  background-color: #fad400;
+  font-family: "Fraunces";
+  margin-bottom: 40px;
+  padding: 16px 30px;
 }
 header nav .wrapper .speech-bubble:after {
   content: "";
@@ -246,6 +250,74 @@ footer .social ul {
 }
 footer .social ul li {
   margin: 0 20px;
+}
+
+@media only screen and (min-width: 850px) {
+  header {
+    background-image: url("../images/desktop/image-header.jpg");
+    background-position: center bottom;
+    height: 800px;
+  }
+  header nav img {
+    padding: 56px;
+  }
+  header nav .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  header nav .wrapper ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 0;
+    background-color: transparent;
+  }
+  header nav .wrapper ul button {
+    margin-left: 40px;
+    color: #fff;
+    background-color: transparent;
+    padding: 16px;
+    cursor: pointer;
+  }
+  header nav .wrapper ul button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  header nav .wrapper ul .last-button {
+    background-color: transparent;
+    margin-bottom: 40px;
+    padding: 16px 30px;
+  }
+  header nav .hamburger-menu {
+    display: none;
+  }
+  header .text-content h1 {
+    margin-top: 175px;
+  }
+
+  main .panel {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .panel img {
+    width: 50%;
+  }
+  main .panel .text {
+    text-align: start;
+    width: calc(50% - 280px);
+    padding: 0;
+    margin: auto;
+  }
+  main .display {
+    display: flex;
+  }
+  main .display .cherry {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    width: 50%;
+  }
+  main .display .orange {
+    background-image: url(../images/desktop/image-photography.jpg);
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -63,13 +63,19 @@ header {
 				}
 
 				button {
-					margin-bottom: 40px;
-					padding: 16px 30px;
+					color: #808397;
+					background-color: transparent;
 					border-radius: 28px;
-					background-color: $c-Yellow;
 					border: none;
 					font-weight: bold;
-					font-family: Fraunces;
+				}
+
+				.last-button {
+					background-color: $c-Yellow;
+					font-family: "Fraunces";
+					margin-bottom: 40px;
+					padding: 16px 30px;
+
 				}
 			}
 	
@@ -311,5 +317,102 @@ footer {
 				margin: 0 20px;
 			}
 		}
+	}
+}
+
+@media only screen and (min-width: 850px) {
+	header {
+		background-image: url("../images/desktop/image-header.jpg");
+		background-position: center bottom;
+		height: 800px;
+		nav {
+
+			img {
+				padding: 56px;
+			}
+			.wrapper {
+				display: flex;
+				flex-direction: row;
+
+				ul {
+					display: flex;
+					flex-direction: row;
+					justify-content: right;
+					margin-top: 0;
+					background-color: transparent;
+
+
+					button {
+						margin-left: 40px;
+						color: #fff;
+						background-color: transparent;
+						padding: 16px;
+						cursor: pointer;
+					}
+
+					button:hover {
+						background-color: rgba(255, 255, 255, 0.2);
+					  
+					}
+	
+					.last-button {
+						background-color: transparent;
+						margin-bottom: 40px;
+						padding: 16px 30px;
+	
+					}
+					li {
+
+					}
+				}
+			}
+
+			.hamburger-menu {
+				display: none;
+			}
+
+		
+		}
+
+		.text-content {
+			 h1 {
+				margin-top: 175px;
+			 }
+		}
+
+	}
+
+	main {
+
+		.panel {
+			display: flex;
+			flex-wrap: wrap;
+			
+			
+			img {
+				width: 50%;
+			}
+			
+			.text {
+				text-align: start;
+				width: calc(50% - 280px);
+				padding: 0;
+				margin: auto;
+			}
+		}
+
+		.display {
+			display: flex;
+			.cherry {
+				background-image: url(../images/desktop/image-graphic-design.jpg);
+				width: 50%;
+			}
+
+			.orange {
+				background-image: url(../images/desktop/image-photography.jpg);
+				width: 50%;
+			}
+		}
+
 	}
 }
