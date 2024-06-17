@@ -4,12 +4,14 @@ const menu = document.querySelector(".wrapper")
 
 addEventListener("resize", (event) => {
 	panelLayout()
+	artSrc()
 });
 
-addEventListener("load", () => {
+window.onload = () => {
+	console.log("loaded")
 	panelLayout()
 	artSrc()
-})
+}
 
 
 hamburger.addEventListener("click", () => {
@@ -37,17 +39,28 @@ function getWidth() {
   }
 
 function artSrc() {
-	document.querySelector("#milkBottles").src = './images/desktop/image-gallery-milkbottles.jpg'
-	document.querySelector("#orange").src = './images/desktop/image-gallery-orange.jpg'
-	document.querySelector("#cone").src = './images/desktop/image-gallery-cone.jpg'
-	document.querySelector("#sugar-cubes").src = './images/desktop/image-gallery-sugarcubes.jpg'
+	const pageWidth = getWidth()
+	if(pageWidth >= 850) {
+		document.querySelector("#milkBottles").src = './images/desktop/image-gallery-milkbottles.jpg'
+		document.querySelector("#orange").src = './images/desktop/image-gallery-orange.jpg'
+		document.querySelector("#cone").src = './images/desktop/image-gallery-cone.jpg'
+		document.querySelector("#sugar-cubes").src = './images/desktop/image-gallery-sugarcubes.jpg'
+
+  
+	  } else {
+		document.querySelector("#milkBottles").src = './images/mobile/image-gallery-milkbottles.jpg'
+		document.querySelector("#orange").src = './images/mobile/image-gallery-orange.jpg'
+		document.querySelector("#cone").src = './images/mobile/image-gallery-cone.jpg'
+		document.querySelector("#sugar-cubes").src = './images/mobile/image-gallery-sugar-cubes.jpg'
+	
+	  }
 
 }
 
 
 function panelLayout() 	{
-	const pageWidth = getWidth()
 	const pagePanel = document.querySelector(".panel")
+	const pageWidth = getWidth()
 
 	panelMobile = `
 	<img src="./images/mobile/image-transform.jpg" alt="egg">
