@@ -6,6 +6,11 @@ addEventListener("resize", (event) => {
 	panelLayout()
 });
 
+addEventListener("load", () => {
+	panelLayout()
+	artSrc()
+})
+
 
 hamburger.addEventListener("click", () => {
 	if (menu.classList.contains("active")) {
@@ -30,6 +35,15 @@ function getWidth() {
 	  return document.body.clientWidth;
 	}
   }
+
+function artSrc() {
+	document.querySelector("#milkBottles").src = './images/desktop/image-gallery-milkbottles.jpg'
+	document.querySelector("#orange").src = './images/desktop/image-gallery-orange.jpg'
+	document.querySelector("#cone").src = './images/desktop/image-gallery-cone.jpg'
+	document.querySelector("#sugar-cubes").src = './images/desktop/image-gallery-sugarcubes.jpg'
+
+}
+
 
 function panelLayout() 	{
 	const pageWidth = getWidth()
@@ -81,8 +95,6 @@ function panelLayout() 	{
 			  </div>
 		  </div>
 	  `
-
-	console.log(pagePanel, "been there")
 
 	if(pageWidth >= 850) {
   

@@ -298,10 +298,18 @@ footer {
 			justify-content: center;
 			font-family: "Barlow";
 			font-weight: 600;
-			color: #458D7E;
 
 			li {
 				margin: 0 20px;
+
+				a {
+					text-decoration: none;
+					color: #458D7E;
+				}
+
+				a:hover {
+					color: #fff;
+				}
 			}
 		}
 	}
@@ -321,6 +329,9 @@ footer {
 }
 
 @media only screen and (min-width: 850px) {
+
+	
+
 	header {
 		background-image: url("../images/desktop/image-header.jpg");
 		background-position: center bottom;
@@ -398,21 +409,97 @@ footer {
 				width: calc(50% - 280px);
 				padding: 0;
 				margin: auto;
+
+				.learn-more-btn {
+					a:hover {
+						.line-through-pink {
+							border-bottom: 8px solid rgba(254, 119, 102, 0.8);
+						}
+
+						.line-through-yellow {
+							border-bottom: 8px solid rgba(250, 212, 0, 0.8);
+						}
+					}
+				}
 			}
 		}
 
 		.display {
 			display: flex;
+
+			div {
+				.text {
+					font-size: 16px;
+					line-height: 27px;
+					padding-top: 50%;
+					padding-left: 120px;
+					padding-right: 120px;
+				}
+			}
+
 			.cherry {
 				background-image: url(../images/desktop/image-graphic-design.jpg);
 				width: 50%;
+				background-size: cover;
+
 			}
 
 			.orange {
 				background-image: url(../images/desktop/image-photography.jpg);
 				width: 50%;
+				background-size: cover;
 			}
 		}
 
+		.testimonial {
+			ul {
+				display: flex;
+				list-style: none;
+
+				padding: 0 135px;
+				margin-bottom: 160px;
+
+				li {
+
+					p {
+						padding: 0 15px;
+					}
+
+					h4 {
+						margin-top: 80px;
+					}
+				}
+			}
+		}
+
+		.art {
+
+			img {
+				width: 25%;
+			}
+		}
+	}
+
+	footer {
+		.footer-menu {
+			ul {
+				li {
+					margin: 0 60;
+				}
+			}
+		}
+
+		.social {
+			ul {
+				li {
+					a {
+						cursor: pointer;
+						svg:hover path {
+							fill: #fff;
+						}
+					}
+				}
+			}
+		}
 	}
 }
